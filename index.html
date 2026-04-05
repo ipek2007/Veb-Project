@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Səhifənin başlığı -->
+  <title>Register Page</title>
+
+  <!-- CSS faylını qoşuruq (görünüş üçün) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Bütün formu ortada saxlamaq üçün container -->
+  <div class="container">
+
+    <!-- Register kartı -->
+    <div class="register-box">
+      <h1>Qeydiyyat</h1>
+      <p>Sistemdə hesab yarat</p>
+
+      <!--
+        Bu form istifadəçi məlumatlarını daxil edir
+        id verdik ki JS ilə bu formu tuta bilək
+      -->
+      <form id="registerForm">
+
+        <!-- Ad soyad input -->
+        <input
+          type="text"
+          id="fullname"
+          placeholder="Ad soyad"
+          required
+        />
+
+        <!-- Email input -->
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+
+        <!-- Şifrə input -->
+        <input
+          type="password"
+          id="password"
+          placeholder="Şifrə"
+          required
+        />
+
+        <!-- Submit düyməsi -->
+        <button type="submit">Qeydiyyatdan keç</button>
+      </form>
+
+      <!-- Backend-dən gələn mesaj burada göstəriləcək -->
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <!-- JS faylını qoşuruq (logic burada olacaq) -->
+  <script src="script.js"></script>
+</body>
+</html>
